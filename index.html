@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		img {
+			margin: 20px;
+
+		}
+
+		.slot {
+			width: 300px;
+			height: 200px;
+			border: 2px solid #777;
+		}
+
+		.slot-big {}
+
+		.slot1 {
+			width: 200px;
+			height: 200px;
+			border: 2px solid #777;
+		}
+
+		.slot-big {
+			width: 600px;
+			height: 400px;
+			border: 2px solid #777;
+			object-fit: none;
+			object-position: 95% 10%;
+			;
+		}
+
+		.none {
+			object-fit: none;
+		}
+
+		.fill {
+			object-fit: fill;
+		}
+
+		.contain {
+			object-fit: contain;
+		}
+
+		.cover {
+			object-fit: cover;
+		}
+
+		.scale-down {
+			object-fit: scale-down;
+
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Свойства переданных кадров, соотношение сторон 1920:1223.  -->
+
+	<img class="slot" src="img/figurist.jpg">
+
+	<img class="slot" src="img/figurist.jpg">
+
+	<img class="slot" src="img/figurist.jpg">
+
+	<img class="slot" src="img/figurist.jpg">
+
+	<img class="slot" src="img/figurist.jpg">
+
+	<!--  Соотношение сторон слота на сайте 400:400 -->
+
+	<img class="slot1 none" src="img/figurist.jpg">
+
+	<img class="slot1 fill" src="img/figurist.jpg">
+
+	<img class="slot1 contain" src="img/figurist.jpg">
+
+	<img class="slot1 cover" src="img/figurist.jpg">
+
+	<img class="slot1 scale-down" src="img/figurist.jpg">
+
+	<img class="slot-big" src="img/figurist.jpg">
+
+</body>
+
+</html>
